@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your Music</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Navbar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 15px 30px;
+            font-size: medium;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 50px;
+        }    
+        
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .login-icon {
+            width: 50px; 
+            height: 50px;
+            cursor: pointer;
+        }
+
+        /* Main content container */
+        .main-content {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 450px;
+        }
+
+        /* Track options styling */
+        .track-options {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .length-section, .tempo-section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .length-section h3, .tempo-section h3 {
+            color: #999;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .track-length {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .tempo-options {
+            display: flex;
+            gap: 30px;
+        }
+
+        .tempo-option {
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* Mood selection styling */
+        .mood {
+            margin-top: 60px;
+        }
+
+        .mood h2 {
+            color: #4f5187;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .mood-box {
+            width: 120px;
+            height: 120px;
+            border: 2px solid red;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .mood-name {
+            position: absolute;
+            bottom: -30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 2px red;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 120px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .footer-links a:hover {
+            font-weight: bold;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 30px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+            <span>Music</span><span style="color: rgb(158, 158, 180);">AI</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="how-it-works.html">How-to-use</a>
+            <a href="services1.html">Services</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="library.html">Library</a>
+        </div>
+        
+        <a href="index.html">
+            <img src="images/login_logo.png" alt="Login" class="login-icon">
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Track Options -->
+        <div class="track-options">
+            <div class="length-section">
+                <h3>Choose Length</h3>
+                <div class="track-length">2:30</div>
+            </div>
+            <div class="tempo-section">
+                <h3>Tempos to generate Tracks</h3>
+                <div class="tempo-options">
+                    <div class="tempo-option">Slow</div>
+                    <div class="tempo-option">Medium</div>
+                    <div class="tempo-option">Fast</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mood Selection -->
+        <div class="mood">
+            <h2>Select the Mood</h2>
+            <div class="flex-container">
+                <div class="mood-box">
+                    <img src="images/services/happy.jpeg" width="115px" onclick="window.location='services2.html'">
+                    <span class="mood-name" >Happy</span>
+                </div>
+                <div class="mood-box">
+                    <img src="images/services/peaceful.jpeg" width="115px" onclick="window.location='services2.html'">
+                    <span class="mood-name">Peaceful</span>
+                </div>
+                <div class="mood-box">
+                    <img src="images/services/hope.jpeg" width="115px" onclick="window.location='services2.html'">
+                    <span class="mood-name">Hope</span>
+                </div>
+                <div class="mood-box">
+                    <img src="images/services/dark.jpeg" width="115px" onclick="window.location='services2.html'">
+                    <span class="mood-name">Dark</span>
+                </div>
+                <div class="mood-box">
+                    <img src="images/services/fun.png" width="115px" onclick="window.location='services2.html'">
+                    <span class="mood-name">Fun</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="social-icons">
+            <img src="images/youtube.png" alt="YouTube">
+            <img src="images/instagram.png" alt="Instagram">
+            <img src="images/twitter.png" alt="Twitter">
+            <img src="images/linkedin.png" alt="LinkedIn">
+        </div>
+    </div>
+</body>
+</html>

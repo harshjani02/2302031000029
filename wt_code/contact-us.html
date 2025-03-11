@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your music</title>
+<style>
+
+    body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+    /* Navbar */
+    .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 15px 30px;
+            font-size: medium;
+        }
+
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 50px;
+        }    
+        
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            
+        }
+
+        .login-icon {
+                width: 50px; 
+                height: 50px;
+                cursor: pointer;
+        }
+
+        /*body*/
+        .contact-container {
+    padding: 40px 0;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    background-color: #777;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 120px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #666;
+}
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 120px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .footer-links a:hover{
+            font-weight: bold;
+        }
+        .social-icons {
+            display: flex;
+            gap: 30px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+</style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+            <span>Music</span><span style="color: rgb(158, 158, 180);">AI</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="how-it-works.html">How-to-use</a>
+            <a href="services1.html">Services</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="library.html">Library</a>
+        </div>
+        
+        <a href="index.html">
+            <img src="images/login_logo.png" alt="Login" class="login-icon">
+        </a>
+    </div>
+
+
+    <!--body-->
+
+    <!-- Contact Us Form Section -->
+<div class="contact-container">
+    <h1 class="contact-title">Get in touch with us!</h1>
+    
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Enter subject" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Enter Message" rows="4" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+
+
+     <!-- Footer -->
+     <div class="footer">
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="social-icons">
+            <img src="images/youtube.png" alt="YouTube">
+            <img src="images/instagram.png" alt="Instagram">
+            <img src="images/twitter.png" alt="Twitter">
+            <img src="images/linkedin.png" alt="LinkedIn">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your music</title>
+<style>
+
+    body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+    /* Navbar */
+    .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 15px 30px;
+            font-size: medium;
+        }
+
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 50px;
+        }    
+        
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            
+        }
+
+        .login-icon {
+                width: 50px; 
+                height: 50px;
+                cursor: pointer;
+        }
+
+
+        /* Main content area styles */
+    .main-content {
+        background-color: #000000;
+        padding: 50px;
+        min-height: 450px;
+    }
+    
+    /* Playlist table styles */
+    .playlist-container {
+        width: 900px;
+        margin: 0 auto;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    
+    .playlist-header {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        background-color: #6fb3b8;
+        color: black;
+        padding: 25px 30px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        border-radius: 30px;
+    }
+    
+    .playlist-row {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        background-color: white;
+        color: black;
+        padding: 20px 30px;
+        margin-top: 20px;
+        align-items: center;
+        border-radius: 30px;
+    }
+    
+    .song-info {
+        display: flex;
+        align-items: center;
+    }
+    
+    .play-button {
+        width: 36px;
+        height: 36px;
+        background-color: white;
+        border: 2px solid #000;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    
+    .play-button span {
+        font-size: 16px;
+    }
+    
+    .song-title {
+        font-weight: 500;
+    }
+    
+    .tempo, .duration, .created {
+        text-align: center;
+    }                 
+
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 120px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .footer-links a:hover{
+            font-weight: bold;
+        }
+        .social-icons {
+            display: flex;
+            gap: 30px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+</style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+            <span>Music</span><span style="color: rgb(158, 158, 180);">AI</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="how-it-works.html">How-to-use</a>
+            <a href="services1.html">Services</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="library.html">Library</a>
+        </div>
+        
+        <a href="index.html">
+            <img src="images/login_logo.png" alt="Login" class="login-icon">
+        </a>
+    </div>
+
+
+    <!-- Main content area - just the body section -->
+<div class="main-content">
+    <!-- Playlist table -->
+    <div class="playlist-container">
+        <!-- Header row -->
+        <div class="playlist-header">
+            <div>Title</div>
+            <div class="tempo">Tempo</div>
+            <div class="duration">Duration</div>
+            <div class="created">Created</div>
+        </div>
+        
+        <!-- Song rows -->
+        <div class="playlist-row">
+            <div class="song-info">
+                <div class="play-button">
+                    <span>▶</span>
+                </div>
+                <div class="song-title">New Composition#1</div>
+            </div>
+            <div class="tempo">30</div>
+            <div class="duration">2:28</div>
+            <div class="created">30/1/25</div>
+        </div>
+        
+        <div class="playlist-row">
+            <div class="song-info">
+                <div class="play-button">
+                    <span>▶</span>
+                </div>
+                <div class="song-title">New Composition#2</div>
+            </div>
+            <div class="tempo">50</div>
+            <div class="duration">5:13</div>
+            <div class="created">31/1/25</div>
+        </div>
+        
+        <div class="playlist-row">
+            <div class="song-info">
+                <div class="play-button">
+                    <span>▶</span>
+                </div>
+                <div class="song-title">New Composition#3</div>
+            </div>
+            <div class="tempo">10</div>
+            <div class="duration">3:45</div>
+            <div class="created">31/1/25</div>
+        </div>
+    </div>
+</div>
+
+
+
+     <!-- Footer -->
+     <div class="footer">
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="social-icons">
+            <img src="images/youtube.png" alt="YouTube">
+            <img src="images/instagram.png" alt="Instagram">
+            <img src="images/twitter.png" alt="Twitter">
+            <img src="images/linkedin.png" alt="LinkedIn">
+        </div>
+    </div>
+</body>
+</html>
